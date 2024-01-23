@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+        .box{
+            width: 300px;
+            height: 350px;
+            /* border: 1px solid darkslateblue; */
+            float: left; 
+            margin: 0 20px;
+            background-position: center top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            cursor: url("img/icons8-search-50.png"), auto;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+        .box:hover{
+            background-position: center -60px;
+            transition: all 0.3s;
+        }
+        .box1{
+            background-image: url("img/20200622_final_springeye_thumbnails_pc.jpg");
+        }
+        .box2{
+            background-image: url("img/20200527_final_overnight_thumbnails_mo_1.jpg");
+        }
+        .box3{
+            background-image: url("img/dbacc21766549beb50de.jpg");
+        }
+        .circle{
+            width: 1000px;
+            height: 800px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0);
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        .box:hover .circle{
+            top: 70%;
+            background-color: rgba(255, 255, 255, 1);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <div class="circle">
+            <p class="p1">dsjfkjslfj</p>
+            <p class="p2">w30000</p>
+        </div><!-- circle -->
+    </div><!-- box1 -->
+
+    <div class="box box2">
+        <div class="circle">
+            <p class="p1">dsjfkjslfj</p>
+            <p class="p2">w30000</p>
+        </div><!-- circle -->
+    </div><!-- box2 -->
+
+    <div class="box box3">
+        <div class="circle">
+            <p class="p1">dsjfkjslfj</p>
+            <p class="p2">w30000</p>
+        </div><!-- circle -->
+    </div><!-- box3 -->
+</body>
+</html>
