@@ -16,6 +16,15 @@
     justify-content: space-between;
     /* border: 1px solid darkorchid; */
 }
+
+.mob_nav_btn{
+    /* 햄버거 삼선버튼 */
+    display: none;
+}
+
+.mob_nav{
+    display: none;
+}
 .select_language{
     /* border: 1px solid darkblue; */
     width: 25%;
@@ -23,6 +32,7 @@
     font-size: 1.1em;
     position: relative;
     padding-top: 12px;
+    z-index: 700;
 }
 .select_language .t_lang i{
     position: absolute;
@@ -318,6 +328,7 @@
     font-size: 17px;
     line-height: 42px;
     border-bottom: 2px solid #eee;
+    display: block;
 }
 .recommand_tab a.on{
     border-bottom: 2px solid darkgoldenrod;
@@ -339,6 +350,7 @@
     width: 25%;
     padding: 24px 35px 0;
     position: relative;
+    /* border: 1px solid rebeccapurple; */
 }
 .recommand_img{
 }
@@ -392,7 +404,6 @@
 .picker_txt_wrap{
     width: calc(100% - 650px);
     /* border: 1px solid red; */
-
 }
 .picker_txt_wrap h3{
     font-size: 1.9vw;
@@ -514,6 +525,7 @@
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .f_left{}
 .f_left a{
@@ -523,14 +535,41 @@
     color: #666;
     font-size: 14px;
 }
+.f_left a::before{
+    content: "|";
+    margin-right: 7px;
+    color: #666;
+
+}
+.f_left a:first-child::before{
+    display: none;
+}
 .f_left a:hover{
     text-decoration: underline;
 }
 
-
-
-.f_right{}
-
+.f_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f_right a{
+    margin-left: 5px;
+}
+.f_right i{
+    font-size: 15px;
+}
+.f_right a:first-child img{
+    width: 30px;
+}
+.copy{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 11px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
 
 
 

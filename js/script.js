@@ -46,8 +46,24 @@ $(function(){
         fade:true
     })
 
+    // 모바일 햄버거 버튼
+    $(".mob_nav_btn").click(function(){
+        $(".mob_nav").addClass("left");
+        $(".m_nav_bg").fadeIn();
+    })//
+    $(".m_nav_bg").click(function(){
+        $(".mob_nav").removeClass("left");
+        $(".m_nav_bg").fadeOut();
+    })//
 
-
+    //모바일 서브 
+    $(".m_nav_list > li").hover(function(){
+        $(this).find(".m_sub").stop().slideDown();
+        $(this).find("a").addClass("on")
+    }, function(){
+        $(this).find(".m_sub").stop().slideUp();
+        $(this).find("a").removeClass("on")
+    })
 
 
 })//jquery
